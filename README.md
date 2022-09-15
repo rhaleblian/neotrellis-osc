@@ -56,11 +56,8 @@ Pressing a button will send a message
 
 where button_index is 0-15 and state is 1 when pressed.
 
-A message will be printed if an OSC message is received with address
-
-     /1/neotrellis/pixel
-
-Right now nothing is done on the device when these arrive.
+Any OSC messages received will be printed.
+Right now nothing special is done on the device when these arrive.
 
 
 ## Notes
