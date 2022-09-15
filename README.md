@@ -2,7 +2,7 @@
 
 An OSC sender/receiver connected to an Adafruit NeoTrellis.
 
-Specifically motivated for use with Bela (bela.io), but should be useful
+Specifically motivated for use with [Bela](http://bela.io), but should be useful
 under any platform supporting the NeoTrellis Python libraries.  You will
 need to skip Bela-specific steps.
 
@@ -13,7 +13,7 @@ The only nearly turnkey affordance I can see for connecting NeoTrellis with
 Bela is the one provided by Adafruit for CircuitPython.  
 The approach is to use it to provide an OSC sender/receiver running on the
 Bela itself. Then, an audio process can talk to it regardless of the
-chosen programming idiom (C, Pure Data, etc) via its OSC API.
+chosen programming idiom (C, Pure Data, etc) via that idiom's OSC API.
 
 This code requires `asyncio` from Python 3.7 or later, which is not
 available from the current Bela image.  We get around this by building
@@ -71,5 +71,5 @@ receive from Bela.
 
 If you only wanted to process OSC messages coming in to the NeoTrellis,
 you could use one of the other kinds of server models that `python-osc`
-provides.  Then the Python 3.5 Bela has would be sufficient.
+provides.  Then the Python 3.5 that Bela has would be sufficient.
 
