@@ -6,7 +6,7 @@ Specifically motivated for use with [Bela](http://bela.io), but should be useful
 under any platform supporting the NeoTrellis Python libraries.  You will
 need to skip Bela-specific steps.
 
-This example stands atop of `python-osc` and Adafruit's CircuitPython libraries.
+This example stands atop of [python-osc](https://python-osc.readthedocs.io/en/latest/#) and Adafruit's [CircuitPython](https://circuitpython.org) libraries.
 
 
 ## Bela and PEPPER
