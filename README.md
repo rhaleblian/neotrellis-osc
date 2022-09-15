@@ -46,7 +46,7 @@ Enter the virtualenv and install Python packages.
 Now that your shell is in the set up virtualenv,
 
      cd /root/neotrellis-osc
-     python3 ./neotrellis.py
+     python3 ./send-and-receive.py
 
 Pressing a button will send a message
 
@@ -70,6 +70,6 @@ receive from Bela.
 ### Does it really need asyncio?
 
 If you only wanted to process OSC messages coming in to the NeoTrellis,
-you could use one of the other kinds of service models that `python-osc`
-provides.
+you could use one of the other kinds of server models that `python-osc`
+provides.  Then the Python 3.5 Bela has would be sufficient.
 
