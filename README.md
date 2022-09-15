@@ -43,7 +43,7 @@ Enter the virtualenv and install Python packages.
      pip3 install -r /root/neotrellis-py/requirements.txt
 
 
-### Operation
+## Operation
 
 Now that your shell is in the set up virtualenv,
 
@@ -62,6 +62,8 @@ A message will be printed if an OSC message is received with address
 
 Right now nothing is done on the device when these arrive.
 
+
+## Notes
 
 ### Does this have to run on the Bela itself?
 
