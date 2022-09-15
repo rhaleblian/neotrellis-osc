@@ -25,12 +25,17 @@ replace or overlay the Python that is included with the Bela image.
 
 ## Installation on Bela
 
-Install a prebuilt Python 3.9 into the /opt directory.
+
+Install a prebuilt Python 3.9 into the /opt directory.  An archive file is
+available here:  https://drive.google.com/file/d/1Vw7DrXY2N4nZDzh19C8dljliSerUS_4c/view?usp=sharing
+
 The unpacked installation is 209MB.  Make sure you have enough room for it
 and the initial tarball too.
 
      cd /
-     tar xf python-3.9-bela.tar.gz
+     tar xf /root/python-3.9-bela.tar.gz
+
+You now have a directory `/opt/python3.9`.
 
 Create an isolated virtualenv with that new Python.
 
