@@ -3,7 +3,7 @@
 #include <Bela.h>
 #include <libraries/Gui/Gui.h>
 #include <iostream>
-#include "neotrellis.h"
+#include "osc.h"
 
 Gui gui;
 int audioChannels;

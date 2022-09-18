@@ -1,4 +1,3 @@
-#include <neotrellis.h>
 #include <libraries/OscSender/OscSender.h>
 #include <libraries/OscReceiver/OscReceiver.h>
 
