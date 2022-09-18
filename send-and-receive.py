@@ -50,10 +50,9 @@ trellis = NeoTrellis(trellis_i2c_bus())
 def trellis_callback(event):
     """ this will be called when button events are received """
     # turn the LED on when a rising edge is detected
-    freq = event.number * 20.0
     if event.edge == NeoTrellis.EDGE_RISING:
         trellis.pixels[event.number] = color_press
-        client.send_message(send_address, [event.number, freq])
+        client.send_message(send_address, [event.number, 1])
     # turn the LED off when a falling edge is detected
     elif event.edge == NeoTrellis.EDGE_FALLING:
         trellis.pixels[event.number] = color_clear
