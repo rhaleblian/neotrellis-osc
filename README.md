@@ -25,6 +25,10 @@ replace or overlay the Python that is included with the Bela image.
 
 ## Installation on Bela
 
+Clone this repo into your Bela projects directory.
+
+    cd Bela/projects
+    git clone https://github.com/rhaleblian/neotrellis-osc
 
 Install a prebuilt Python 3.9 into the /opt directory.  An archive file is
 available here:  https://drive.google.com/file/d/1Vw7DrXY2N4nZDzh19C8dljliSerUS_4c/view?usp=sharing
@@ -39,21 +43,22 @@ You now have a directory `/opt/python3.9`.
 
 Create an isolated virtualenv with that new Python.
 
-     cd
-     /opt/python3.9/bin/python3 -m venv venv
+     /opt/python3.9/bin/python3 -m venv /root/venv
 
 Enter the virtualenv and install Python packages.
 
      source /root/venv/bin/activate
-     pip3 install -r /root/neotrellis-py/requirements.txt
+     pip3 install -r /root/Bela/projects/neotrellis-osc/requirements.txt
 
 
 ## Operation
 
-Now that your shell is in the set up virtualenv,
+Now that your shell is in the virtualenv,
 
-     cd /root/neotrellis-osc
-     python3 ./send-and-receive.py
+     cd /root/Bela/projects/neotrellis-osc
+     python3 ./neotrellis.py
+
+In the Bela IDE, run the project.
 
 Pressing a button will send a message
 
@@ -61,16 +66,19 @@ Pressing a button will send a message
 
 where button_index is 0-15 and state is 1 when pressed.
 
-Any OSC messages received will be printed.
-Right now nothing special is done on the device when these arrive.
+Addresses for OSC messages received by the audio process will be printed.
+When our NeoTrellis message arrives, the key and state gets printed.
+Right now nothing special is done on the device in terms of audio
+ when Neotrellis messages arrive.
 
 
 ## Notes
 
 ### Does this have to run on the Bela itself?
 
-It does not.  @rhaleblian has run it on Raspberry Pis and had them
-receive from Bela.
+The Python bit does not.
+@rhaleblian has run it on a Raspberry Pi and had it receive from Bela.
+Adjust IP addresses and ports as needed.
 
 
 ### Does it really need asyncio?
