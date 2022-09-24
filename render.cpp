@@ -1,4 +1,10 @@
-// Conway's Game of Life, drawn to Bela GUI.
+// render.cpp
+//
+// Audio process which speaks with NeoTrellis.
+// Run this concurrently with neotrellis.py.
+// See README.md for usage instructions.
+//
+// 2021 yoyodyne research
 
 #include <Bela.h>
 #include <libraries/Gui/Gui.h>
